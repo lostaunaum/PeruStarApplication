@@ -39,6 +39,13 @@ namespace PeruStarApplication.Controllers
             return View();
         }
 
+        public IActionResult Reservations()
+        {
+            ViewData["Message"] = "Your contact page.";
+
+            return View();
+        }
+
         [HttpPost]
         public IActionResult Contact(ContactViewModel contactView)
         {

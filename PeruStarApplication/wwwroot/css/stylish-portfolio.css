@@ -149,26 +149,61 @@ hr.small {
   padding: 15px 20px;
 }
 
-
-/* Header */
-
-.header {
-  position: relative;
-  display: table;
-  width: 100%;
-  height: 100%;
-  background: url(/images/bg.jpg) no-repeat center center scroll;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+/* NavBarTopSection */
+.carousel-inner>.carousel-item>img, .carousel-inner>.carousel-item>a>img {
+    display: block;
+    height: auto;
+    max-width: 100%;
+    max-height: 900px;
+    min-height: 360px;
+    line-height: 1;
+    width: 100%;
 }
 
+.nav-item {
+    padding-right: 52px;
+    font-weight: 700;
+    padding-left: 0;
+}
+/* Header */
+.header {
+    position: relative;
+    display: table;
+    width: 100%;
+    height: 100%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
 
 /* About */
-
 .about {
-  padding: 50px 0;
+    padding: 50px 0;
+}
+
+/* Common Section */
+.common-section {
+    padding: 50px 0;
+    background: red;
+}
+
+/* Rooms */
+.common-section {
+    padding: 50px 0;
+    background: red;
+}
+
+/* Services */
+.common-section {
+    padding: 50px 0;
+    background: red;
+}
+
+/* Restaurants */
+.common-section {
+    padding: 50px 0;
+    background: red;
 }
 
 
@@ -198,22 +233,22 @@ hr.small {
 }
 
 
-/* Portfolio */
+/* Rooms */
 
-.portfolio {
+.rooms {
   padding: 50px 0;
 }
 
-.portfolio-item {
-  margin-bottom: 30px;
+.rooms-item {
+    margin-bottom: 30px;
 }
 
-.img-portfolio {
-  margin: 0 auto;
+.img-rooms {
+    margin: 0 auto;
 }
 
-.img-portfolio:hover {
-  opacity: .8;
+.img-rooms:hover {
+    opacity: .8;
 }
 
 
