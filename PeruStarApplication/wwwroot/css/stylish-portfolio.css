@@ -36,11 +36,12 @@ body {
   border: none;
   border-radius: 0;
   background-color: rgba(0, 0, 0, .4);
+  font-size: 30px;
 }
 
 .btn-dark:hover, .btn-dark:focus, .btn-dark:active {
-  color: #fff;
-  background-color: rgba(0, 0, 0, .7);
+  background-color: #fff;
+  color: #199EB8;
 }
 
 .btn-light {
@@ -154,7 +155,7 @@ hr.small {
     display: block;
     height: auto;
     max-width: 100%;
-    max-height: 900px;
+    max-height: 690px;
     min-height: 360px;
     line-height: 1;
     width: 100%;
@@ -177,46 +178,61 @@ hr.small {
     background-size: cover;
 }
 
-/* About */
-.about {
-    padding: 50px 0;
-}
-
 /* Common Section */
 .common-section {
     padding: 50px 0;
     background: red;
 }
 
-/* Rooms */
-.common-section {
-    padding: 50px 0;
-    background: red;
-}
-
-/* Services */
-.common-section {
-    padding: 50px 0;
-    background: red;
-}
-
-/* Restaurants */
-.common-section {
-    padding: 50px 0;
-    background: red;
-}
-
-
-/* Services */
-
+/* Services Section
+--------------------------------*/
 .services {
-  padding: 50px 0;
+    background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url(/images/Banners/AreasComunes/services-bg.jpg) fixed center center;
+    background-size: cover;
+    padding: 80px 0 60px 0;
 }
 
-.service-item {
-  margin-bottom: 30px;
+.services .service-item {
+    margin-bottom: 20px;
 }
 
+.services .service-icon {
+    float: left;
+    background: #03C4EB;
+    padding: 16px;
+    border-radius: 50%;
+    transition: 0.5s;
+    border: 1px solid #03C4EB;
+}
+
+.services .service-icon i {
+    color: #fff;
+    font-size: 24px;
+}
+
+.services .service-item:hover .service-icon {
+    background: #fff;
+}
+
+.services .service-item:hover .service-icon i {
+    color: #03C4EB;
+}
+
+.services .service-title {
+    margin-left: 80px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+.services .service-title a {
+    color: #111;
+}
+
+.services .service-description {
+    margin-left: 80px;
+    line-height: 24px;
+}
 
 /* Callout */
 
@@ -252,14 +268,16 @@ hr.small {
 }
 
 
+
 /* Call to Action */
 
 .call-to-action {
-  padding: 50px 0;
+    padding: 50px 0;
+    background-color: #199EB8;
 }
 
 .call-to-action .btn {
-  margin: 10px;
+    margin: 10px;
 }
 
 
@@ -293,4 +311,129 @@ footer {
   bottom: 5px;
   display: none;
   padding: 15px 20px;
+}
+
+
+/* Portfolio Section
+--------------------------------*/
+.apartments {
+    background: #fff;
+    padding: 80px 0;
+}
+
+.apartments .apartments-item {
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    height: 260px;
+    width: 100%;
+    display: table;
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+
+.apartments .apartments-item .details {
+    height: 260px;
+    background: #fff;
+    display: table-cell;
+    vertical-align: middle;
+    opacity: 0;
+    transition: 0.3s;
+    text-align: center;
+}
+
+.apartments .apartments-item .details h4 {
+    font-size: 16px;
+    transition: opacity 0.3s, -webkit-transform 0.3s;
+    transition: transform 0.3s, opacity 0.3s;
+    transition: transform 0.3s, opacity 0.3s, -webkit-transform 0.3s;
+    -webkit-transform: translate3d(0, -15px, 0);
+    transform: translate3d(0, -15px, 0);
+    font-weight: 700;
+    color: #333333;
+}
+
+.apartments .apartments-item .details span {
+    display: block;
+    color: #666666;
+    font-size: 13px;
+    transition: opacity 0.3s, -webkit-transform 0.3s;
+    transition: transform 0.3s, opacity 0.3s;
+    transition: transform 0.3s, opacity 0.3s, -webkit-transform 0.3s;
+    -webkit-transform: translate3d(0, 15px, 0);
+    transform: translate3d(0, 15px, 0);
+}
+
+.apartments .apartments-item:hover .details {
+    opacity: 0.8;
+}
+
+.apartments .apartments-item:hover .details h4 {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
+
+.apartments .apartments-item:hover .details span {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
+
+
+/*--------------------------------------------------------------
+# Sections
+--------------------------------------------------------------*/
+/* Sections Common
+--------------------------------*/
+.common-section-title {
+    font-size: 32px;
+    color: #111;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 700;
+}
+
+.common-section-description {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 20px;
+    color: #96a1a3;
+}
+
+.common-section-title-divider {
+    width: 50px;
+    height: 3px;
+    background: #03C4EB;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+.restaurant {
+    background: #fff;
+    padding: 80px 0;
+    background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url(/images/Banners/AreasComunes/restaurante.jpg) fixed center center;
+    background-size: cover;
+    padding: 80px 0 60px 0;
+}
+
+.restaurant-content img {
+    margin: auto;
+    display: block;
+}
+
+.restaurant .restaurant-title {
+    color: #333;
+    font-weight: 700;
+    font-size: 28px;
+}
+
+.restaurant-content .restaurant-text {
+    line-height: 26px;
+    text-align: justify;
+}
+
+.restaurant .restaurant-text:last-child {
+    margin-bottom: 0;
+}
+.col-md-push-6 {
+    left: 50%;
 }
