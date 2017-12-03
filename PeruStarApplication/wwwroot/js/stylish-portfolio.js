@@ -79,3 +79,10 @@ var onMapClickHandler = function(event) {
 }
 // Enable map zooming with mouse scroll when the user clicks the map
 $('.map').on('click', onMapClickHandler);
+$('.hero-logo').cycle({
+    fx: 'fade',
+    pager: '#smallnav',
+    pause: 1,
+    speed: 1800,
+    timeout: 3500
+});
