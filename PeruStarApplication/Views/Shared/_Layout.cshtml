@@ -14,17 +14,11 @@
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
 
     <!-- Custom CSS -->
-    <link href="~/css/stylish-portfolio.css" rel="stylesheet">
+    <link rel="stylesheet" href="~/css/stylish-portfolio.css" asp-append-version="true" >
 
     
     <title>@ViewData["Title"] - PeruStarApplication</title>
 
-    <environment names="Staging,Production">
-        <link rel="stylesheet" href="https://ajax.aspnetcdn.com/ajax/bootstrap/3.3.7/css/bootstrap.min.css"
-              asp-fallback-href="~/lib/bootstrap/dist/css/bootstrap.min.css"
-              asp-fallback-test-class="sr-only" asp-fallback-test-property="position" asp-fallback-test-value="absolute" />
-        <link rel="stylesheet" href="~/css/site.min.css" asp-append-version="true" />
-    </environment>
     @Html.Raw(JavaScriptSnippet.FullScript)
 </head>
 <body>
@@ -81,54 +75,18 @@
         </a>
     </footer>
 
+    <script src="~/lib/jquery/dist/jquery.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.js"></script>
 
-    @*<div class="container body-content">
-        
-        <hr />
-        <footer>
-            <p>&copy; 2017 - PeruStarApplication</p>
-        </footer>
-    </div>*@
+    <!-- Bootstrap core JavaScript -->
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 
-    <environment names="Development">
-        <script src="~/lib/jquery/dist/jquery.js"></script>
-        <script src="~/lib/bootstrap/dist/js/bootstrap.js"></script>
+    <!-- Plugin JavaScript -->
+    <script src="~/lib/jquery-easing/dist/jquery.easing.min.js"></script>
 
-        <!-- Bootstrap core JavaScript -->
-        <script src="~/lib/jquery/dist/jquery.min.js"></script>
-        <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-
-        <!-- Plugin JavaScript -->
-        <script src="~/lib/jquery-easing/dist/jquery.easing.min.js"></script>
-
-        <!-- Custom scripts for this template -->
-        <script src="~/js/stylish-portfolio.js"></script>
-    </environment>
-    <environment names="Staging,Production">
-        <script src="https://ajax.aspnetcdn.com/ajax/jquery/jquery-2.2.0.min.js"
-                asp-fallback-src="~/lib/jquery/dist/jquery.min.js"
-                asp-fallback-test="window.jQuery"
-                crossorigin="anonymous"
-                integrity="sha384-K+ctZQ+LL8q6tP7I94W+qzQsfRV2a+AfHIi9k8z8l9ggpc8X+Ytst4yBo/hH+8Fk">
-        </script>
-        <script src="https://ajax.aspnetcdn.com/ajax/bootstrap/3.3.7/bootstrap.min.js"
-                asp-fallback-src="~/lib/bootstrap/dist/js/bootstrap.min.js"
-                asp-fallback-test="window.jQuery && window.jQuery.fn && window.jQuery.fn.modal"
-                crossorigin="anonymous"
-                integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa">
-        </script>
-        <script src="~/js/site.min.js" asp-append-version="true"></script>
-
-        <!-- Bootstrap core JavaScript -->
-        <script src="~/lib/jquery/dist/jquery.min.js"></script>
-        <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-
-        <!-- Plugin JavaScript -->
-        <script src="~/lib/jquery-easing/dist/jquery.easing.min.js"></script>
-
-        <!-- Custom scripts for this template -->
-        <script src="~/js/stylish-portfolio.js"></script>
-    </environment>
+    <!-- Custom scripts for this template -->
+    <script src="~/js/stylish-portfolio.js"></script>
 
     @RenderSection("Scripts", required: false)
 </body>
