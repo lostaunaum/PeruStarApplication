@@ -3,19 +3,34 @@
 @{
     ViewBag.Title = "Contact";
 }
-<h2>@ViewData["Title"].</h2>
-<h3>@ViewData["Message"]</h3>
 
 @section scripts
-{
+    {
     <script src="~/lib/jquery-validation/dist/jquery.validate.min.js"></script>
     <script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>
 }
-
+<!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+        <a class="navbar-brand" href="#">
+            <img src="~/images/Banners/Decorative/logoPeruStar.png" />
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" onclick="location.href = '@Url.Action("Index", "Home")'">Home</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
 <form method="post">
     <span asp-validation-summary="ModelOnly"></span>
     @if (ViewBag.UserMessage != null)
-    { 
+    {
         <div>@ViewBag.UserMessage </div>
     }
 

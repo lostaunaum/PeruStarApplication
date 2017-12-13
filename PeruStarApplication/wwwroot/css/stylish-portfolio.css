@@ -30,6 +30,9 @@ body {
 
 
 /* Custom Button Styles */
+.btn {
+  cursor: pointer;
+}
 
 .btn-dark {
   color: #fff;
@@ -41,7 +44,7 @@ body {
 
 .btn-dark:hover, .btn-dark:focus, .btn-dark:active {
   background-color: #fff;
-  color: #199EB8;
+  color: #199EB8;  
 }
 
 .btn-light {
@@ -316,7 +319,7 @@ footer {
 }
 
 
-/* Portfolio Section
+/* Apartments Section
 --------------------------------*/
 .apartments {
     background: #fff;
@@ -369,6 +372,7 @@ footer {
 
 .apartments .apartments-item:hover .details {
     opacity: 0.8;
+    cursor: pointer;
 }
 
 .apartments .apartments-item:hover .details h4 {
@@ -440,6 +444,8 @@ footer {
     left: 50%;
 }
 
+/*ABOUT SECTION*/
+
 .about {
     background: #fff;
     padding: 80px 0;
@@ -465,5 +471,35 @@ footer {
 }
 
 .about .about-text:last-child {
+    margin-bottom: 0;
+}
+
+/*CHILD PAGE SECTION*/
+
+.child-page {
+    background: #fff;
+    padding: 80px 0;
+    background-color: #199EB8;
+    background-size: cover;
+    padding: 80px 0 60px 0;
+}
+
+.child-page-content img {
+    margin: auto;
+    display: block;
+}
+
+.child-page .child-page-title {
+    color: #333;
+    font-weight: 700;
+    font-size: 28px;
+}
+
+.child-page-content .child-page-text {
+    line-height: 26px;
+    text-align: justify;
+}
+
+.child-page .child-page-text:last-child {
     margin-bottom: 0;
 }
