@@ -474,9 +474,9 @@ footer {
     margin-bottom: 0;
 }
 
-/*CHILD PAGE SECTION*/
+/*RESTAURANT CHILD PAGE SECTION*/
 
-.child-page {
+.restaurant-child-page {
     background: #fff;
     padding: 80px 0;
     background-color: #199EB8;
@@ -484,22 +484,58 @@ footer {
     padding: 80px 0 60px 0;
 }
 
-.child-page-content img {
+.restaurant-child-page-content img {
     margin: auto;
     display: block;
 }
 
-.child-page .child-page-title {
+.restaurant-child-page .restaurant-child-page-title {
     color: #333;
     font-weight: 700;
     font-size: 28px;
 }
 
-.child-page-content .child-page-text {
+.restaurant-child-page-content .restaurant-child-page-text {
     line-height: 26px;
     text-align: justify;
 }
 
-.child-page .child-page-text:last-child {
+.restaurant-child-page .restaurant-child-page-text:last-child {
     margin-bottom: 0;
+}
+
+.restaurant-child-page .details {
+    display: block;
+    border-top: 4px solid #a7a59b;
+    background-color: #f6e9d9;
+    height: 22px;
+    line-height: 22px;
+    padding: 4px 6px;
+    font-size: 14px;
+    color: #000;
+    margin-bottom: 13px;
+    clear: both;
+}
+
+.restaurant-child-page .restaurant-item h4 {
+    display: block;
+    float: left;
+}
+
+.restaurant-child-page .restaurant-item span {
+    float: right;
+    font-size: 1.5rem;
+}
+
+.restaurant-child-page .restaurant-item .description {
+    font-size: 14px;
+    float: left;
+}
+
+.restaurant-item {
+    border-bottom: 1px dashed #96a1a3;
+    position: relative;
+    min-height: 1px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
