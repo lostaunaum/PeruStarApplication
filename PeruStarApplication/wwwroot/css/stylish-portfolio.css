@@ -477,44 +477,16 @@ footer {
 /*RESTAURANT CHILD PAGE SECTION*/
 
 .restaurant-child-page {
-    background: #fff;
-    padding: 80px 0;
-    background-color: #199EB8;
+    background: url(/images/Banners/AreasComunes/lacarta2.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
     background-size: cover;
-    padding: 80px 0 60px 0;
+    padding: 140px 0 140px 0;
+    color: #fff;
 }
 
-.restaurant-child-page-content img {
-    margin: auto;
-    display: block;
-}
-
-.restaurant-child-page .restaurant-child-page-title {
-    color: #333;
-    font-weight: 700;
-    font-size: 28px;
-}
-
-.restaurant-child-page-content .restaurant-child-page-text {
-    line-height: 26px;
-    text-align: justify;
-}
-
-.restaurant-child-page .restaurant-child-page-text:last-child {
-    margin-bottom: 0;
-}
-
-.restaurant-child-page .details {
-    display: block;
-    border-top: 4px solid #a7a59b;
-    background-color: #f6e9d9;
-    height: 22px;
-    line-height: 22px;
-    padding: 4px 6px;
-    font-size: 14px;
-    color: #000;
-    margin-bottom: 13px;
-    clear: both;
+.restaurant-child-page h3 {
+    color: #fff;
 }
 
 .restaurant-child-page .restaurant-item h4 {
@@ -536,6 +508,30 @@ footer {
     border-bottom: 1px dashed #96a1a3;
     position: relative;
     min-height: 1px;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding: 20px;
+    height: 104px;
+}
+
+/*ABOUTUS CHILD PAGE SECTION*/
+.aboutus-child-page {
+    background: url(/images/Banners/AreasComunes/saludo2.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    padding: 140px 0 140px 0;
+    color: #fff;
+    height: 100%;
+
+
+}
+
+.aboutus-item {
+    min-height: 150px;
+    padding: 20px;
+    font-size: 24px;
+    color: #fff;
+    text-align: right;
+    -webkit-animation-delay: 0.7s;
+    -moz-animation-delay: 0.7s;
+    animation-delay: 0.7s;
 }
